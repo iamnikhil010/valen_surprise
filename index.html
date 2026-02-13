@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <div class="hearts-container"></div>
+  <audio id="bgMusic" loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
+</audio>
+
+
+</head>
+<body>
+
+<!-- PAGE 1 KEY -->
+<div id="page1" class="page active">
+  <h2>🔐 Enter the key love 💖</h2>
+  <input type="password" id="keyInput" placeholder="Enter key" />
+  <button onclick="checkKey()">Enter</button>
+</div>
+
+<!-- PAGE 2 NAME -->
+<div id="page2" class="page">
+  <h2> Your name love 💕</h2>
+  <input type="text" id="nameInput" placeholder="name i prefer calling you" />
+  <button onclick="saveName()">Continue</button>
+</div>
+
+<!-- PAGE 3 LOVE QUESTION -->
+<div id="page3" class="page">
+  <h2 id="loveQuestion"></h2>
+  <button onclick="yesClicked()">YES ❤️</button>
+  <button id="noBtn">NO 💔</button>
+</div>
+
+<!-- PAGE 4 LOVE GIF -->
+<div id="page4" class="page">
+  <h2 id="loveMessage"></h2>
+  <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" class="gif" />
+    <button class="quizBtn" onclick="openQuiz()">Little Quiz 💌</button>
+</div>
+
+<!-- PAGE 5 QUIZ -->
+<div id="page5" class="page">
+  <h2>Answer honestly 😌</h2>
+
+  <textarea id="q1" placeholder="First thing you noticed about me"></textarea>
+  <textarea id="q2" placeholder="When did you get crush on me"></textarea>
+  <textarea id="q3" placeholder="Favorite memory"></textarea>
+  <textarea id="q4" placeholder="Song that reminds me"></textarea>
+  <textarea id="q5" placeholder="Your crush other than me 😉"></textarea>
+
+  <button onclick="submitQuiz()">Submit ❤️</button>
+</div>
+
+<div id="page6" class="page">
+  <div class="final-card">
+    <p id="finalNote"></p>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
