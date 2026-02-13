@@ -9,7 +9,7 @@ function showPage(id) {
 
 function checkKey() {
   const key = document.getElementById("keyInput").value;
-  if (key === "1030") {
+  if (key === "0517") {
     showPage("page2");
 
     // play music after user interaction
