@@ -9,7 +9,7 @@ function showPage(id) {
 
 function checkKey() {
   const key = document.getElementById("keyInput").value;
-  if (key === "0143") {
+  if (key === "1030") {
     showPage("page2");
 
     // play music after user interaction
@@ -67,8 +67,10 @@ function submitQuiz() {
 
 Happy Valentine’s Day ${userName} ❤️
 
+This is 4 u 
+
 "If 'I' alone dosen't make any sense i wanna add 'YOU' along with 'LOVE' 
-         ~ "I LOVE YOU "`;
+         ~ "I LOVE YOU ❤️ "`;
 
   showPage("page6");
 }
